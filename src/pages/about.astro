@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+
+const identity = {
+    name: 'Sarah Wiilliams',
+    designation: 'Technical writer',
+    country: 'Ireland',
+    hobbies: ['reading', 'birdwatching', 'writing']
+}
+
+const skills = ['HTML', 'CSS', 'JavaScript', 'Node.js', 'React']
+
+---
+<BaseLayout pageTitle="About Me">
+    <div class="container">
+        <h2>... and my new Astro site!</h2>
+        <h4>Hello! My name is {identity.name} and I am a {identity.designation} from {identity.country}</h4>   
+        <p>My hobbies include not only writing but as well as {identity.hobbies[0]} and {identity.hobbies[1]}</p>
+        <ul class="ul">My skills include - 
+            {skills.map(i => { 
+                return <li>{i}</li>    
+            })}
+        </ul>
+        <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+        <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    </div>	
+</BaseLayout>
+
+        
+       

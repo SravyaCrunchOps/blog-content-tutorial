@@ -1,0 +1,11 @@
+.tags {
+    margin-right: 10px;
+    background-color: rgb(200, 24, 24);
+    color: white;
+    border: transparent;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}

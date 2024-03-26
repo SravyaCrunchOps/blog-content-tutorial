@@ -1,0 +1,98 @@
+body {
+    text-align: center;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+h1 {
+    background-color: rgba(239, 153, 163, 0.7);
+    margin: 0;
+    padding: 20px;
+}
+#navigation {
+    background-color: darkblue;
+    color: white;
+    display: none;
+    text-align: center;
+    padding: 10px 20px;
+}
+#navigation a {
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    font-family: 'Lucida Sans', sans-serif;
+    letter-spacing: 1px;
+}
+#navigation a:hover {
+    color: #ff9776;
+}
+.ul li {
+    list-style: numbered;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.ul a {
+    text-decoration: none;
+    color: rgb(155, 115, 12);
+}
+.ul a:hover {
+    color: green;
+    font-weight: semibold;
+}
+.ul-blog {
+    margin: 0 auto;
+    width: 100px;
+}
+footer {
+    background-color: rgb(29, 27, 27);
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+footer a:hover {
+    color: yellow
+}
+
+.hamburger {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 40px;
+    height: 2px;
+    display: block;
+    margin-bottom: 8px;
+    background-color: #ff9776;
+}
+
+.expanded {
+    display: unset;
+}
+@media screen and (min-width: 760px) {
+    .hamburger {
+        display: none;
+    }
+    #navigation {
+        display: block;
+        width: 100%;
+    }
+    #navigation a {
+        display: inline-block;
+    }
+       
+}
